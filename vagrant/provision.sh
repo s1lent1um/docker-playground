@@ -10,8 +10,6 @@ install software-properties-common # changed in 14.04
 install libpcre3-dev
 install libcurl3-openssl-dev
 
-add-repository ppa:nginx/stable
-add-php54-repository
 add-docker-repository
 apt-get update
 
@@ -19,15 +17,16 @@ install pkg-config
 install git-core
 install curl
 
-install docker-engine
-usermod -aG docker vagrant
+#install docker-engine
+install docker-compose
+usermod -aG docker ubuntu
 
 config-bash
 config-hosts
 config-locale
 
 
-chown -R vagrant /vagrant
+#chown -R ubuntu /vagrant
 
 
 # init scripts here
