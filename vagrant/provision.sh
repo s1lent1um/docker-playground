@@ -24,7 +24,7 @@ usermod -aG docker ubuntu
 config-bash
 config-hosts
 config-locale
-config-locale
+config-sysctl
 
 #chown -R ubuntu /vagrant
 
