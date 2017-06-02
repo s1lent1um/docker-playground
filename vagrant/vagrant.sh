@@ -103,7 +103,7 @@ config-bash() {
 }
 
 config-sysctl() {
-  copy ${PROJECT_DIR}/vagrant/sysctl.conf /etc/sysctl.d/vagrant-sysctl.conf
+  copy ${PROJECT_DIR}/vagrant/sysctl.conf /etc/sysctl.d/10-vagrant-sysctl.conf
   sysctl -p /etc/sysctl.conf
 }
 
