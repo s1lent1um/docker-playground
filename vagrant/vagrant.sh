@@ -102,6 +102,11 @@ config-bash() {
   copy ${PROJECT_DIR}/vagrant/.bashrc ~ubuntu/.bashrc
 }
 
+config-sysctl() {
+  copy ${PROJECT_DIR}/vagrant/sysctl.conf /etc/sysctl.conf
+  sysctl -p /etc/sysctl.conf
+}
+
 
 config-locale() {
   configured locale
